@@ -1,26 +1,11 @@
 \xiaosi
 
+\textbf{端到端自动驾驶规划}方面，UniAD\cite{hu2023uniad}（CVPR 2023最佳论文）首次将检测、跟踪、建图、运动预测和规划统一在Transformer框架中，在nuScenes规划基准上取得L2误差0.71m。VAD\cite{jiang2023vad}用向量化场景表示替代稠密栅格，显著降低计算开销。SparseDrive\cite{sun2024sparsedrive}采用全稀疏架构实现感知-规划端到端。DriveTransformer\cite{drivetransformer2025}（ICLR 2025）提出任务间双向交互的Transformer架构，成为端到端规划的最新代表。2025年，稀疏表示与端到端联合优化已成为主流范式。
 
-\begin{equation}
-     \sum_{i=\left\lceil\frac{m}{2}\right\rceil}^{m}\left(\begin{array}{c}
-     m \\
-     i
-     \end{array}\right) p^{i}(1-p)^{m-i}=\sum_{i=0}^{\left\lfloor\frac{m}{2}\right\rfloor}\left(\begin{array}{c}
-     m \\
-     i
-     \end{array}\right)(1-p)^{i} p^{m-i}
-\end{equation}
+\textbf{大模型驱动的规划}方面，EMMA\cite{emma2024waymo}（Waymo，基于Gemini）将端到端驾驶统一为视觉-语言生成任务。DriveVLM\cite{tian2024drivevlm}结合视觉语言模型的链式推理与传统规划器，实现双系统架构。扩散模型规划方面，DiffusionDrive\cite{diffusiondrive2025}（CVPR 2025）通过截断扩散实现高效多模态轨迹生成。强化学习方面，CaRL\cite{carl2025}采用大规模PPO训练超越了此前所有方法。然而，上述方法均面临推理延迟高、参数量大、可解释性不足等共同挑战。
 
+\textbf{液态神经网络}方面，Hasani等人\cite{hasani2021ltc}提出的液态时间常数网络（LTC）通过输入自适应的ODE动力学实现高效时序建模。NCP\cite{lechner2020ncp}将LTC与生物启发的四层稀疏布线结合，以极少参数实现车道保持。CfC\cite{hasani2022cfc}用闭式解替代ODE求解器，将推理速度提升5--8倍。Chahine等人\cite{chahine2023robust}在\textit{Science Robotics}上展示了仅19个神经元的NCP在分布外飞行导航中远超大型网络的鲁棒性。Liquid AI在2025年发布了LFM2系列模型\cite{lfm2tech2025}，完成了从ODE动力学到门控短卷积+GQA混合架构的演进。
 
-\begin{equation}
-    \begin{aligned}
-        \operatorname{Pr}\left\{o_{k}^{*} \!\succeq \!r\! \succeq \!o_{c k}^{*} \mid x, m\right\}\!=\!1 & \!-\!\sum_{i=\left\lceil\frac{m}{2}\right\rceil}^{m}\!\left(\!\begin{array}{c}
-        m \\
-        i
-        \end{array}\right) p^{i}(1\!-\!p)^{m\!-\!i} \\
-        & \!-\!\sum_{i=\left\lceil\frac{m+1}{2}\right\rceil}^{m}\!\left(\!\begin{array}{c}
-        m \\
-        i
-        \end{array}\right) q^{m\!-\!i}(1\!-\!q)^{i}
-    \end{aligned}
-\end{equation}
+\textbf{神经架构搜索}方面，NEAT\cite{stanley2002neat}专门针对网络拓扑的进化搜索，DARTS\cite{liu2019darts}将搜索时间从数千GPU天降至数天。然而，面向NCP布线拓扑的自动化搜索尚属空白。
+
+\textbf{深度强化学习}方面，DQN\cite{mnih2015dqn}通过经验回放和目标网络稳定训练，是离散动作空间的经典方法。Double DQN\cite{hasselt2016ddqn}通过解耦动作选择和Q-value评估减少过估计。Highway-env\cite{leurent2018highway}提供了高速公路、匝道合流、交叉路口、环岛等多种驾驶场景，是RL驾驶研究的标准平台。

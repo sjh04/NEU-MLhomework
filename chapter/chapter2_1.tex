@@ -1,21 +1,12 @@
-\xiaosi 
+\xiaosi
 
-\wuhao
-\begin{table}[H]
-  \centering
-  \caption{表格标题}
-  \label{tab:my-table}
-  \begin{tabular}{|c|c|c|}
-    \hline
-    字段名 & 字段类型 & 是否为空 \\
-    \hline
-    id & int & NOT NULL \\
-    \hline
-    name & varchar(20) & NOT NULL \\
-    \hline
-    age & int & NULL \\
-    \hline
-  \end{tabular}
-\end{table}
+液态时间常数网络（Liquid Time-Constant Networks, LTC）\cite{hasani2021ltc}是一种基于常微分方程的循环神经网络单元。传统RNN（如LSTM、GRU）的门控参数在推理时固定不变，而LTC借鉴了生物神经元的膜电位动力学，让时间常数$\tau$随输入和当前状态动态调整。具体而言，LTC神经元的状态$x$由以下ODE描述：
 
+\begin{equation}
+    c_m \frac{dx}{dt} = -g_{leak}(x - v_{leak}) + \sum_{j} w_j \sigma(x_j)(e_{rev,j} - x)
+    \label{eq:ltc}
+\end{equation}
 
+式中，$c_m$为膜电容，$g_{leak}$和$v_{leak}$分别为泄漏电导和泄漏电位，$w_j$为突触权重，$\sigma$为sigmoid激活函数，$e_{rev,j}$为第$j$条突触的反转电位。将上式整理可得等价形式$dx/dt = -[1/\tau(x,I)] \odot x + f(x,I)$，其中$\tau$不再是常数，而是关于输入$I$和状态$x$的函数——这正是"液态时间常数"名称的由来。
+
+由于上述ODE没有解析解，实现时采用多步欧拉法进行数值离散化，默认展开6步。每一步依次完成三件事：计算感觉层突触对当前神经元的加权激活、计算循环层突触的加权激活（需乘以稀疏性掩码以屏蔽不存在的连接），以及按式\ref{eq:ltc}更新神经元状态。为保证ODE动力学的物理合理性，训练过程中需在每次梯度更新后将$w$、$c_m$、$g_{leak}$裁剪为非负值。

@@ -1,0 +1,40 @@
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Experiment results (large files)
+code/results/*/model.pt
+code/results/*/train.log
+code/results/experiment_log.txt
+code/results/search/
+
+# Keep log.csv and figures
+!code/results/*/log.csv
+!code/results/figures/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,8 +1,11 @@
-\xiaosi 
+\xiaosi
 
-With the constantincrease of the mankind demanding the mineral products, easily mining resource is becoming more and more scarce, and it’s the inevitable trend of mining complex ore body. On the other hand, national environmental protection policy increasingly stringent. How to exploit and utilization mineral resourcesreasonably, efficiently, economically, safely and reduce loss of resource and dilution of ore is the question of mineral developers caring about. Due to the advantages of increasing recovery rate, reducing dilution rate, controlling underground pressure and mitigating of environmental disturbance, filling method is becoming more and more widely used.
+Autonomous driving planning systems face three major challenges: computational efficiency, interpretability compliance, and long-tail generalization. Current end-to-end large models are parameter-heavy and opaque, making them unsuitable for edge deployment and safety certification. Neural Circuit Policies (NCP), with their minimal parameters and biologically-inspired sparse structure, offer a differentiated approach, but their wiring topology relies entirely on manual design, and their applicability in reinforcement learning scenarios remains unverified.
+
+This thesis proposes an interpretable autonomous driving planning method based on NCP. First, NCP is integrated as the Q-network of Double DQN. To address the expressivity bottleneck caused by NCP's ODE constraints, a two-layer Q-head scheme is proposed, enabling effective Q-value estimation while preserving the interpretability of liquid dynamics. Second, an evolutionary search algorithm for NCP wiring topology is designed with a safety-aware multi-objective fitness function, automatically discovering optimal wiring configurations that balance performance and safety.
+
+Systematic experiments are conducted on four driving scenarios in Highway-env, comparing against five baseline models including MLP, LSTM, GRU, and fully-connected LTC. Results show that NCP achieves comparable reward to MLP (34.94 vs 34.88) on the highway scenario with only 7,152 parameters (vs 13,189), achieving over 3x the parameter efficiency of GRU with the lowest variance (1.21). Compared with fully-connected LTC at the same parameter count, NCP's structured sparse topology improves reward by 23\%. Multi-level interpretability analysis reveals the correspondence between NCP command neurons and driving decisions.
 
 
-    
 \vspace{\baselineskip}
-\noindent \xiaosi\textbf{ Key words:} \xiaosi Key words 1; Key words 2; Key words 3; Key words 4; Key words 5
+\noindent \xiaosi\textbf{ Key words:} \xiaosi Neural Circuit Policies; Liquid Time-Constant Networks; Autonomous Driving Planning; Topology Search; Explainable Artificial Intelligence

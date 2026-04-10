@@ -1,0 +1,66 @@
+# ============================================================
+# NCP Highway-env Experiment Configuration
+# ============================================================
+
+# Environment
+env:
+  names: ["highway-v0", "merge-v0", "intersection-v0", "roundabout-v0"]
+  obs_type: "Kinematics"
+  vehicles_count: 5
+  features: ["presence", "x", "y", "vx", "vy"]
+  normalize_obs: true
+
+# DQN Hyperparameters
+dqn:
+  lr: 3.0e-4
+  gamma: 0.99
+  batch_size: 64
+  buffer_size: 50000
+  target_update_freq: 500
+  eps_start: 1.0
+  eps_end: 0.05
+  eps_decay_steps: 10000
+  train_steps: 50000
+  eval_episodes: 50
+  sequence_length: 8
+  grad_clip: 10.0
+
+# NCP Default Wiring
+ncp:
+  inter_neurons: 12
+  command_neurons: 8
+  sensory_fanout: 4
+  inter_fanout: 4
+  recurrent_command_synapses: 4
+  motor_fanin: 4
+
+# FullyConnected LTC Baseline
+fc_ltc:
+  units: 25
+
+# MLP Baseline
+mlp:
+  hidden_sizes: [128, 64]
+
+# LSTM / GRU Baseline
+rnn:
+  hidden_size: 64
+  num_layers: 1
+
+# Evolutionary Search
+search:
+  population_size: 20
+  generations: 30
+  tournament_size: 3
+  mutation_rate: 0.3
+  crossover_rate: 0.5
+  elite_count: 2
+  fitness_episodes: 10
+  fitness_train_steps: 15000
+  env_names: ["highway-v0", "roundabout-v0"]
+
+# General
+seed: 42
+device: "cuda"
+log_interval: 1000
+save_dir: "results"

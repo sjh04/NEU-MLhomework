@@ -1,0 +1,21 @@
+\xiaosi
+
+深度Q网络（Deep Q-Network, DQN）\cite{mnih2015dqn}用神经网络$Q(s,a;\theta)$逼近最优动作值函数，是离散动作空间下深度强化学习的代表性方法。训练目标是最小化时序差分误差：
+
+\begin{equation}
+    L(\theta) = \mathbb{E}_{(s,a,r,s') \sim \mathcal{D}} \left[ \left( r + \gamma \max_{a'} Q(s', a'; \theta^{-}) - Q(s, a; \theta) \right)^2 \right]
+    \label{eq:dqn}
+\end{equation}
+
+其中$\mathcal{D}$为经验回放缓冲区，$\theta^{-}$为定期从在线网络复制的目标网络参数，$\gamma$为折扣因子。经验回放打破了连续采样之间的时间相关性，目标网络则避免了"自举目标"随训练同步漂移导致的振荡。
+
+原始DQN存在Q值过估计的问题：$\max$算子同时用于选择和评估动作，会系统性地偏高。van Hasselt等人提出的Double DQN\cite{hasselt2016ddqn}将两者解耦——用在线网络选择最优动作，用目标网络评估其Q值：
+
+\begin{equation}
+    y = r + \gamma Q(s', \arg\max_{a'} Q(s', a'; \theta); \theta^{-})
+    \label{eq:ddqn}
+\end{equation}
+
+在本文的场景中，NCP的ODE动力学约束（权重非负、稀疏连接）使得Q-value估计的波动本身就比MLP更大，Double DQN对训练稳定性的帮助更为明显，因此本文统一采用这一方案。
+
+对于循环模型（LSTM、GRU、NCP），训练时不能像MLP那样对单步转移独立采样。本文从经验回放缓冲区中抽取长度为8的连续序列，序列开头将隐藏状态初始化为零向量，仅对序列最后一步计算损失，以此让隐藏状态有足够的"预热"步数来编码上下文信息。

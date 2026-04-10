@@ -45,11 +45,6 @@
 
     \thispagestyle{fancy} % 保留页眉和页脚
 
-    % =============================东北大学本科生毕业设计（论文）书写印制规范
-    \input{chapter/Appendix}
-
-    \clearpage
-
     % ============================= 封面 ==========================
      \input{chapter/Cover}
      \clearpage
@@ -114,6 +109,8 @@
     
 
     % ==========================  正文开始  ==========================
+
+    % ============================= 第一章 ============================
     \clearpage
     \sanhaolineskip
     \section{绪论}
@@ -124,19 +121,53 @@
                 \input{chapter/chapter1_2_1}
             \subsubsection{国内研究现状}
                 \input{chapter/chapter1_2_2}
+        \subsection{本文的研究内容和技术路线}
+            \input{chapter/chapter1_4_1}
         \subsection{本章小结}
             \input{chapter/chapter1_3}
-        \subsection{本文的研究内容和技术路线}
-            \subsubsection{本文的研究内容}
-                \input{chapter/chapter1_4_1}
 
+    % ============================= 第二章 ============================
     \clearpage
     \sanhaolineskip
-    \section{相关技术介绍}
-        \subsection{技术一}
+    \section{相关技术}
+        \subsection{液态时间常数网络}
             \input{chapter/chapter2_1}
-        \subsection{技术二}
+        \subsection{神经电路策略}
             \input{chapter/chapter2_2}
+        \subsection{深度Q网络与Double DQN}
+            \input{chapter/chapter2_3}
+        \subsection{进化搜索算法}
+            \input{chapter/chapter2_4}
+
+    % ============================= 第三章 ============================
+    \clearpage
+    \sanhaolineskip
+    \section{基于神经电路策略的可解释规划方法}
+        \subsection{整体框架}
+            \input{chapter/chapter3_1}
+        \subsection{神经电路策略Q网络设计}
+            \input{chapter/chapter3_2}
+        \subsection{安全感知的布线拓扑搜索}
+            \input{chapter/chapter3_3}
+
+    % ============================= 第四章 ============================
+    \clearpage
+    \sanhaolineskip
+    \section{实验与分析}
+        \subsection{实验设置}
+            \input{chapter/chapter4_1}
+        \subsection{基线对比实验}
+            \input{chapter/chapter4_2}
+        \subsection{消融实验}
+            \input{chapter/chapter4_3}
+        \subsection{可解释性分析}
+            \input{chapter/chapter4_4}
+
+    % ============================= 第五章 ============================
+    \clearpage
+    \sanhaolineskip
+    \section{结论与展望}
+        \input{chapter/chapter5}
     % ================================================================
 
 
