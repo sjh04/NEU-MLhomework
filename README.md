@@ -101,8 +101,6 @@ NEU-MLhomework/
 ├── main.tex                    # 论文主文件（东北大学本科毕业设计 LaTeX 模板）
 ├── chapter/                    # 论文各章节
 ├── reference.bib               # 参考文献
-├── experiment_design.md        # 实验设计文档
-├── research_background.md      # 研究背景与相关工作（含 77 篇参考文献）
 └── code/                       # 实验代码
     ├── configs/default.yaml    # 超参数配置
     ├── envs/                   # Highway-env 环境封装

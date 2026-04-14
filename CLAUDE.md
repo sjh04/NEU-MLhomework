@@ -83,9 +83,7 @@ All expose `forward(obs, hidden) → (q_values, new_hidden)` and `init_hidden(ba
 
 `main.tex` is the entry point; chapters in `chapter/`, abstracts in `intro/`, bibliography in `reference.bib`. Compile with `xelatex main.tex && bibtex main && xelatex main.tex && xelatex main.tex`.
 
-**论文撰写规范**见 `thesis_requirements.md`，包含字体字号、页面设置、图表公式编号、引文标注等详细要求。写论文时必须遵守该规范。
-
-Supporting docs: `experiment_design.md` (实验设计), `research_background.md` (研究背景与相关工作).
+论文撰写需遵守东北大学本科毕业设计（论文）书写印制规范：字体字号（论文题目黑体二号、章标题黑体小二号、节标题黑体四号、正文宋体小四号）、页边距（上下2.5cm、左3.0cm、右2.5cm）、图表公式按章编号（如 图2.1、表3.4、式（4.2））、引文采用方括号上标如 [3]。
 
 ## Conventions
 - 实验结果保存到 `code/results/`，图表复制到 `img/` 用于论文
