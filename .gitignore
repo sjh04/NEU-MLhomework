@@ -19,15 +19,16 @@ __pycache__/
 *.egg-info/
 .eggs/
 
-# Experiment results (large files)
-code/results/*/model.pt
-code/results/*/train.log
+# Experiment logs (keep log.csv, drop terminal outputs)
 code/results/experiment_log.txt
-code/results/search/
+code/results/search_log.txt
+code/results/searched_log.txt
+code/results/*/train.log
+code/results/ablation_tmp_*
 
-# Keep log.csv and figures
-!code/results/*/log.csv
-!code/results/figures/
+# Temp directories
+code/results/_ncp_bak_*
+code/results/ncp_searched_tmp_*
 
 # OS
 .DS_Store

@@ -1,0 +1,2357 @@
+[
+  {
+    "gen": 0,
+    "best_fitness": 28.740193671244946,
+    "mean_fitness": 21.702824096714295,
+    "worst_fitness": 11.900717784057527,
+    "best_reward": 36.78897415904982,
+    "mean_reward": 29.987954588778152,
+    "mean_collision": 0.8285130492063855,
+    "population": [
+      {
+        "inter_neurons": 8,
+        "command_neurons": 5,
+        "sensory_fanout": 5,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 5
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 11,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 5
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 9,
+        "sensory_fanout": 5,
+        "inter_fanout": 3,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 5
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 11,
+        "command_neurons": 13,
+        "sensory_fanout": 4,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 2,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 4,
+        "command_neurons": 6,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 3,
+        "sensory_fanout": 4,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 5,
+        "inter_fanout": 2,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 13,
+        "sensory_fanout": 7,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 7
+      },
+      {
+        "inter_neurons": 4,
+        "command_neurons": 15,
+        "sensory_fanout": 1,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 8
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 3,
+        "sensory_fanout": 5,
+        "inter_fanout": 3,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 7,
+        "sensory_fanout": 5,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 13,
+        "command_neurons": 3,
+        "sensory_fanout": 2,
+        "inter_fanout": 3,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 17,
+        "command_neurons": 16,
+        "sensory_fanout": 8,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 6,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 9,
+        "command_neurons": 6,
+        "sensory_fanout": 8,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 6
+      }
+    ],
+    "fitnesses": [
+      13.861974826460752,
+      22.482947167625873,
+      20.290356155448208,
+      28.740193671244946,
+      23.59188970340265,
+      23.386969431669264,
+      26.08934032905629,
+      23.7293103742326,
+      15.357009312863472,
+      26.00318489029777,
+      16.07872818447173,
+      19.470390807880705,
+      27.698796609206486,
+      11.900717784057527,
+      24.212944428129667,
+      24.350431871380767
+    ]
+  },
+  {
+    "gen": 1,
+    "best_fitness": 27.56577165725254,
+    "mean_fitness": 21.92163036118917,
+    "worst_fitness": 17.17261211791343,
+    "best_reward": 35.37747649185814,
+    "mean_reward": 30.133766376731657,
+    "mean_collision": 0.821213601554249,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 7,
+        "sensory_fanout": 5,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 2,
+        "sensory_fanout": 5,
+        "inter_fanout": 2,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 3,
+        "sensory_fanout": 7,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 17,
+        "command_neurons": 6,
+        "sensory_fanout": 8,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 6
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 16,
+        "sensory_fanout": 7,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 7
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 9,
+        "sensory_fanout": 2,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 13,
+        "sensory_fanout": 4,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 3,
+        "sensory_fanout": 4,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 2,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 7,
+        "command_neurons": 6,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 17,
+        "command_neurons": 7,
+        "sensory_fanout": 8,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 6
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 4,
+        "sensory_fanout": 3,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 9,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 20,
+        "command_neurons": 13,
+        "sensory_fanout": 4,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 8
+      }
+    ],
+    "fitnesses": [
+      25.092882666429396,
+      22.3769587242219,
+      21.867518346380642,
+      22.987647673157856,
+      27.56577165725254,
+      20.66495243619186,
+      24.476295378825142,
+      17.17261211791343,
+      23.104542557855957,
+      19.10245047480347,
+      18.270725397961304,
+      18.67261635207024,
+      21.717213052835127,
+      21.12505237776312,
+      22.690394491785,
+      23.858452073579727
+    ]
+  },
+  {
+    "gen": 2,
+    "best_fitness": 26.54409063721567,
+    "mean_fitness": 21.809305276245183,
+    "worst_fitness": 15.819824788831525,
+    "best_reward": 34.45382935455534,
+    "mean_reward": 29.999837847354307,
+    "mean_collision": 0.8190532571109121,
+    "population": [
+      {
+        "inter_neurons": 17,
+        "command_neurons": 6,
+        "sensory_fanout": 8,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 6
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 2,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 17,
+        "command_neurons": 6,
+        "sensory_fanout": 8,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 6
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 3,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 7,
+        "sensory_fanout": 5,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 6
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 9,
+        "sensory_fanout": 5,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 17,
+        "command_neurons": 6,
+        "sensory_fanout": 2,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 20,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 8
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 9,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 9,
+        "sensory_fanout": 2,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 15,
+        "command_neurons": 2,
+        "sensory_fanout": 7,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 2
+      }
+    ],
+    "fitnesses": [
+      15.819824788831525,
+      26.54409063721567,
+      18.440684623639456,
+      20.848047888178563,
+      19.466058459301486,
+      24.444915530116774,
+      21.551017390990097,
+      24.547141530215598,
+      23.865362323391054,
+      19.111411561233982,
+      21.00124864462596,
+      21.645554650308004,
+      23.960756902005492,
+      20.925920681707282,
+      22.45322147424945,
+      24.323627333912558
+    ]
+  },
+  {
+    "gen": 3,
+    "best_fitness": 27.351063219001755,
+    "mean_fitness": 20.13845679021526,
+    "worst_fitness": 4.806602681611295,
+    "best_reward": 35.279451965804824,
+    "mean_reward": 28.55246468678167,
+    "mean_collision": 0.8414007896566411,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 7,
+        "sensory_fanout": 5,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 11,
+        "sensory_fanout": 1,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 9,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 9,
+        "sensory_fanout": 2,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 15,
+        "command_neurons": 9,
+        "sensory_fanout": 8,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 3,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 7
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 7,
+        "sensory_fanout": 5,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 2,
+        "sensory_fanout": 2,
+        "inter_fanout": 2,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      }
+    ],
+    "fitnesses": [
+      22.64242075600339,
+      25.474941878970775,
+      24.572690139744815,
+      26.964705824602834,
+      4.806602681611295,
+      26.734801950366297,
+      20.831457595468116,
+      17.554255877000905,
+      19.073875538730675,
+      27.351063219001755,
+      19.024774273633007,
+      21.92155183193369,
+      22.847783538437582,
+      16.450353299331496,
+      13.490668252112789,
+      12.473361986494664
+    ]
+  },
+  {
+    "gen": 4,
+    "best_fitness": 27.684393431192895,
+    "mean_fitness": 19.76867936104916,
+    "worst_fitness": 10.775817883364077,
+    "best_reward": 36.24951484399643,
+    "mean_reward": 28.146137832617512,
+    "mean_collision": 0.8377458471568355,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 2,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 6,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 3,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 14,
+        "command_neurons": 12,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      }
+    ],
+    "fitnesses": [
+      13.654518087814793,
+      19.658454736081584,
+      19.38919995614949,
+      24.52957097080122,
+      21.694623228544227,
+      17.852939700570943,
+      21.445691749147336,
+      27.684393431192895,
+      22.044802235402074,
+      22.671550803429444,
+      12.368092963502098,
+      10.775817883364077,
+      21.646218829385425,
+      20.431457424631798,
+      20.317413095640735,
+      20.134124681128373
+    ]
+  },
+  {
+    "gen": 5,
+    "best_fitness": 28.131199068816617,
+    "mean_fitness": 21.151615087269022,
+    "worst_fitness": 14.109030457285018,
+    "best_reward": 35.60431734838651,
+    "mean_reward": 29.487088344163425,
+    "mean_collision": 0.83354732568944,
+    "population": [
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 11,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 3,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 8,
+        "sensory_fanout": 2,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      }
+    ],
+    "fitnesses": [
+      20.179829261021553,
+      21.053311904811224,
+      19.80587048763228,
+      24.102118490984402,
+      14.97725965189694,
+      25.500456251989355,
+      17.904311417136086,
+      22.272841042461934,
+      18.856779210965712,
+      24.068342265090454,
+      14.572520650626775,
+      28.131199068816617,
+      22.82874978030256,
+      14.109030457285018,
+      24.52633093767778,
+      25.53689051760568
+    ]
+  },
+  {
+    "gen": 6,
+    "best_fitness": 28.871973178220507,
+    "mean_fitness": 21.74861304045662,
+    "worst_fitness": 11.559781479369816,
+    "best_reward": 36.90117025851248,
+    "mean_reward": 30.13600568371205,
+    "mean_collision": 0.8387392643255432,
+    "population": [
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 13,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 11,
+        "sensory_fanout": 1,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 6,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 15,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 6,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 3,
+        "sensory_fanout": 2,
+        "inter_fanout": 3,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 14,
+        "command_neurons": 9,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      }
+    ],
+    "fitnesses": [
+      28.806137111350857,
+      25.46064032361452,
+      21.957352043949264,
+      21.45436978877682,
+      15.681227814418385,
+      21.439355409541577,
+      20.72585553263813,
+      15.980393538945007,
+      28.871973178220507,
+      11.559781479369816,
+      17.8112001209694,
+      22.177086106917592,
+      25.830705687428168,
+      27.747443907144483,
+      19.881546568308927,
+      22.592740035712445
+    ]
+  },
+  {
+    "gen": 7,
+    "best_fitness": 28.737552108657503,
+    "mean_fitness": 20.55765816604803,
+    "worst_fitness": 5.093728718427421,
+    "best_reward": 36.961653588572936,
+    "mean_reward": 28.915456983054497,
+    "mean_collision": 0.8357798817006465,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 12,
+        "command_neurons": 10,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 15,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 11,
+        "sensory_fanout": 3,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      }
+    ],
+    "fitnesses": [
+      21.705409595385007,
+      21.167837987050117,
+      17.984869805184747,
+      26.617863977641676,
+      19.257681664876245,
+      28.737552108657503,
+      18.74590332339085,
+      22.96350460040687,
+      17.00108897074034,
+      22.894105168360905,
+      24.808247410656,
+      13.825631680213807,
+      5.093728718427421,
+      23.52285444315735,
+      23.46007892335689,
+      21.13617227926275
+    ]
+  },
+  {
+    "gen": 8,
+    "best_fitness": 25.622139814061946,
+    "mean_fitness": 19.544384412200735,
+    "worst_fitness": 5.201163887441707,
+    "best_reward": 33.997425855251876,
+    "mean_reward": 28.08638668749002,
+    "mean_collision": 0.8542002275289282,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 11,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 5
+      }
+    ],
+    "fitnesses": [
+      18.61035156071874,
+      19.44691028552816,
+      23.424149289409378,
+      5.201163887441707,
+      13.996768829485703,
+      22.283391544236984,
+      22.66613091743734,
+      25.622139814061946,
+      15.24562940690016,
+      25.433049415985785,
+      19.97878856753328,
+      10.949202240817078,
+      22.702230341375465,
+      22.81832414961374,
+      23.531222666291008,
+      20.80069767837533
+    ]
+  },
+  {
+    "gen": 9,
+    "best_fitness": 28.079019874823256,
+    "mean_fitness": 19.988522170395168,
+    "worst_fitness": 12.63080474252046,
+    "best_reward": 36.48739976215889,
+    "mean_reward": 28.446129890414003,
+    "mean_collision": 0.8457607720018838,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 5
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 8,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 8,
+        "sensory_fanout": 1,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 7,
+        "sensory_fanout": 2,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 6,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 10,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      }
+    ],
+    "fitnesses": [
+      20.517417304260974,
+      22.444749602044595,
+      25.08746376073774,
+      12.803473297393838,
+      17.186892765728885,
+      19.562089806953086,
+      17.921202161312152,
+      27.643983392052128,
+      22.239205275933003,
+      28.079019874823256,
+      17.118010858807732,
+      15.684651704252259,
+      20.752062356121016,
+      12.63080474252046,
+      17.13211853575559,
+      23.013209287625934
+    ]
+  },
+  {
+    "gen": 10,
+    "best_fitness": 25.29930926601957,
+    "mean_fitness": 19.333106268522677,
+    "worst_fitness": 13.020220871568016,
+    "best_reward": 33.11101410062517,
+    "mean_reward": 27.786738511787597,
+    "mean_collision": 0.8453632243264921,
+    "population": [
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 5
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 10,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 12,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 14,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 4,
+        "sensory_fanout": 3,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 5
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 10,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 5,
+        "sensory_fanout": 2,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 4
+      }
+    ],
+    "fitnesses": [
+      19.406104973397092,
+      15.290158628189547,
+      14.914994543524214,
+      25.29930926601957,
+      24.27252456527113,
+      19.59210653753668,
+      21.626390521872384,
+      20.93036086454991,
+      19.549341484449034,
+      13.020220871568016,
+      21.585473869798932,
+      16.45511514383476,
+      21.101726053243773,
+      22.333929489230606,
+      15.152358584926763,
+      18.799584898950435
+    ]
+  },
+  {
+    "gen": 11,
+    "best_fitness": 27.092916186821455,
+    "mean_fitness": 20.70629329906403,
+    "worst_fitness": 13.791552873395501,
+    "best_reward": 35.11348173952069,
+    "mean_reward": 29.062610061040974,
+    "mean_collision": 0.8356316761976943,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 10,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 12,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 9,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 10,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 7,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 13,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 10,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 5
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 14,
+        "sensory_fanout": 2,
+        "inter_fanout": 1,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 0,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 15,
+        "sensory_fanout": 4,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 6,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 14,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      }
+    ],
+    "fitnesses": [
+      20.063579590256317,
+      20.34628036253974,
+      16.745638411543055,
+      24.321701345865296,
+      16.1741719455948,
+      24.91287851228337,
+      19.946723634335953,
+      21.932767244740823,
+      27.092916186821455,
+      18.3044511567797,
+      24.001974948561646,
+      25.04110937771558,
+      13.791552873395501,
+      16.878595761388027,
+      18.500450332908287,
+      23.245901100294958
+    ]
+  },
+  {
+    "gen": 12,
+    "best_fitness": 27.14582872814574,
+    "mean_fitness": 19.57974391153186,
+    "worst_fitness": 10.899832560208548,
+    "best_reward": 35.24927700400781,
+    "mean_reward": 28.031646673311286,
+    "mean_collision": 0.845190276177943,
+    "population": [
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 5,
+        "command_neurons": 11,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 9,
+        "sensory_fanout": 3,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 11,
+        "sensory_fanout": 2,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 1,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 7,
+        "command_neurons": 14,
+        "sensory_fanout": 2,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 13,
+        "command_neurons": 14,
+        "sensory_fanout": 6,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 3
+      }
+    ],
+    "fitnesses": [
+      23.476771367700508,
+      26.162139694353677,
+      27.14582872814574,
+      15.750840409929653,
+      22.811657914296546,
+      21.79107130796629,
+      11.313272093073357,
+      14.66299799657702,
+      16.07046768328437,
+      19.689716039037883,
+      16.5518867871463,
+      17.760782538449703,
+      18.507833018689226,
+      25.367041298933493,
+      10.899832560208548,
+      25.313763146717427
+    ]
+  },
+  {
+    "gen": 13,
+    "best_fitness": 28.13086378004847,
+    "mean_fitness": 20.599438512754688,
+    "worst_fitness": 11.842343151055802,
+    "best_reward": 36.56904165423502,
+    "mean_reward": 29.01775111677383,
+    "mean_collision": 0.8418312604019147,
+    "population": [
+      {
+        "inter_neurons": 16,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 2,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 11,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 7,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 5,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 13,
+        "sensory_fanout": 8,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 7,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 20,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 16,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      }
+    ],
+    "fitnesses": [
+      19.436087464393644,
+      27.752445628333874,
+      19.313402271359102,
+      18.539167745912458,
+      14.205610375411641,
+      28.13086378004847,
+      25.88550416875294,
+      11.842343151055802,
+      23.30332821922059,
+      22.794920938625452,
+      17.790876769170204,
+      20.60257110047549,
+      18.67088297624985,
+      26.897865267208665,
+      15.17914835821515,
+      19.245997989641655
+    ]
+  },
+  {
+    "gen": 14,
+    "best_fitness": 26.942300324678698,
+    "mean_fitness": 22.798461954358615,
+    "worst_fitness": 15.899961494749824,
+    "best_reward": 35.26501794675938,
+    "mean_reward": 31.117908428389434,
+    "mean_collision": 0.8319446474030818,
+    "population": [
+      {
+        "inter_neurons": 3,
+        "command_neurons": 7,
+        "sensory_fanout": 3,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 10,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 6,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 8,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 20,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 2,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 2,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 20,
+        "command_neurons": 16,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 7,
+        "sensory_fanout": 4,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 4
+      },
+      {
+        "inter_neurons": 3,
+        "command_neurons": 16,
+        "sensory_fanout": 2,
+        "inter_fanout": 4,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 6
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 8,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 2
+      },
+      {
+        "inter_neurons": 16,
+        "command_neurons": 13,
+        "sensory_fanout": 3,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 2,
+        "command_neurons": 13,
+        "sensory_fanout": 1,
+        "inter_fanout": 7,
+        "recurrent_command_synapses": 5,
+        "motor_fanin": 3
+      },
+      {
+        "inter_neurons": 8,
+        "command_neurons": 13,
+        "sensory_fanout": 8,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 3,
+        "motor_fanin": 1
+      },
+      {
+        "inter_neurons": 20,
+        "command_neurons": 14,
+        "sensory_fanout": 1,
+        "inter_fanout": 8,
+        "recurrent_command_synapses": 4,
+        "motor_fanin": 2
+      }
+    ],
+    "fitnesses": [
+      23.944913368433355,
+      18.352826352440083,
+      26.02113001115697,
+      22.616714544843425,
+      26.942300324678698,
+      21.7270387218182,
+      26.922339597670145,
+      21.052886984794064,
+      23.89210825300129,
+      15.899961494749824,
+      23.079787867754238,
+      26.703933868916266,
+      21.266400373253255,
+      21.970949793915068,
+      23.864025105468116,
+      20.51807460684482
+    ]
+  }
+]

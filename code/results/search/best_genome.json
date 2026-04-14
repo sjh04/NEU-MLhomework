@@ -1,0 +1,8 @@
+{
+  "inter_neurons": 3,
+  "command_neurons": 7,
+  "sensory_fanout": 3,
+  "inter_fanout": 5,
+  "recurrent_command_synapses": 0,
+  "motor_fanin": 2
+}
