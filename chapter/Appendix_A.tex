@@ -1,3 +1,106 @@
+\xiaosi
+
+\subsection*{附录A：实验超参数详细配置}
+
+\wuhao
+\begin{table}[H]
+  \centering
+  \caption{实验超参数汇总}
+  \label{tab:hyperparams}
+  \begin{tabular}{lll}
+    \hline
+    类别 & 参数 & 值 \\
+    \hline
+    \multirow{6}{*}{DQN训练} & 学习率 & $3 \times 10^{-4}$ \\
+    & 折扣因子 $\gamma$ & 0.99 \\
+    & 批量大小 & 64 \\
+    & 经验回放容量 & 50,000 \\
+    & 目标网络更新频率 & 每500步 \\
+    & 梯度裁剪阈值 & 10.0 \\
+    \hline
+    \multirow{3}{*}{$\varepsilon$-贪心} & 初始值 & 1.0 \\
+    & 终止值 & 0.05 \\
+    & 衰减步数 & 10,000 \\
+    \hline
+    \multirow{2}{*}{循环模型} & 序列长度 & 8 \\
+    & 隐藏状态初始化 & 零向量 \\
+    \hline
+    \multirow{6}{*}{NCP默认布线} & 中间神经元数 $n_i$ & 12 \\
+    & 命令神经元数 $n_c$ & 8 \\
+    & 感觉扇出 $f_s$ & 4 \\
+    & 中间扇出 $f_i$ & 4 \\
+    & 命令循环连接数 $r_c$ & 4 \\
+    & 运动扇入 $f_m$ & 4 \\
+    \hline
+    \multirow{7}{*}{进化搜索} & 种群大小 & 16 \\
+    & 代数 & 15 \\
+    & 锦标赛大小 & 3 \\
+    & 精英保留数 & 2 \\
+    & 交叉率 & 0.5 \\
+    & 变异率 & 0.3 \\
+    & 适应度训练步数 & 8,000 \\
+    \hline
+    \multirow{3}{*}{训练规模} & 基线训练步数 & 50,000 \\
+    & 种子数 & 3（0, 42, 123）\\
+    & 评估episode数 & 50 \\
+    \hline
+  \end{tabular}
+\end{table}
 
 \xiaosi
-（待补充实验核心代码）
+
+\subsection*{附录B：NCP布线搜索空间}
+
+\wuhao
+\begin{table}[H]
+  \centering
+  \caption{进化搜索的6个基因及取值范围}
+  \label{tab:search_space}
+  \begin{tabular}{llcc}
+    \hline
+    基因 & 含义 & 取值范围 & 搜索结果 \\
+    \hline
+    $n_i$ & 中间神经元数 & [2, 20] & 3 \\
+    $n_c$ & 命令神经元数 & [2, 16] & 7 \\
+    $f_s$ & 感觉扇出 & [1, 8] & 3 \\
+    $f_i$ & 中间扇出 & [1, 8] & 5 \\
+    $r_c$ & 命令循环连接数 & [0, 8] & 0 \\
+    $f_m$ & 运动扇入 & [1, 8] & 2 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\xiaosi
+
+约束条件：$f_s \leq n_i$，$f_i \leq n_c$，$f_m \leq n_c$。违反约束的基因组在每次遗传操作后通过裁剪修复。
+
+\subsection*{附录C：核心代码结构}
+
+\wuhao
+\begin{table}[H]
+  \centering
+  \caption{代码模块结构}
+  \label{tab:code_structure}
+  \begin{tabular}{ll}
+    \hline
+    模块 & 功能 \\
+    \hline
+    \texttt{envs/env\_factory.py} & Highway-env环境统一封装 \\
+    \texttt{models/wiring.py} & NCP布线类（Wiring, NCP, FullyConnected）\\
+    \texttt{models/ltc\_cell.py} & LTC单元PyTorch实现 \\
+    \texttt{models/q\_networks.py} & 6种Q网络（Random, MLP, LSTM, GRU, NCP, FC\_LTC）\\
+    \texttt{models/dqn\_agent.py} & Double DQN智能体 \\
+    \texttt{utils/replay\_buffer.py} & 经验回放缓冲区（支持序列采样）\\
+    \texttt{search/genome.py} & 布线基因组（变异、交叉、约束修复）\\
+    \texttt{search/evolution.py} & 进化搜索主循环（并行评估）\\
+    \texttt{scripts/train.py} & 单模型训练入口 \\
+    \texttt{scripts/run\_search.py} & 进化搜索入口 \\
+    \texttt{scripts/run\_ablation\_ode.py} & ODE展开数消融 \\
+    \texttt{scripts/plot\_results.py} & 结果可视化 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\xiaosi
+
+本研究的完整代码、实验日志和模型权重已整理到项目仓库，包含超过2,000行Python代码和完整的实验复现脚本。

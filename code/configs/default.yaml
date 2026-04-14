@@ -49,15 +49,18 @@ rnn:
 
 # Evolutionary Search
 search:
-  population_size: 20
-  generations: 30
+  population_size: 16
+  generations: 15
   tournament_size: 3
   mutation_rate: 0.3
   crossover_rate: 0.5
   elite_count: 2
   fitness_episodes: 10
-  fitness_train_steps: 15000
-  env_names: ["highway-v0", "roundabout-v0"]
+  fitness_train_steps: 8000        # reduced from 15000 for speed
+  env_names: ["highway-v0"]        # single env to halve eval time
+  # Parallel evaluation
+  max_parallel: 8                  # 4 per GPU, sweet spot
+  gpu_ids: [0, 1]                  # use both GPUs
 
 # General
 seed: 42

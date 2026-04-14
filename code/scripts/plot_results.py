@@ -262,6 +262,147 @@ def plot_param_table(data):
 
 
 # ============================================================
+# Figure 7: Search convergence
+# ============================================================
+def plot_search_convergence():
+    print("Plotting search convergence...")
+    history_path = os.path.join(RESULTS_DIR, "search", "fitness_history.json")
+    if not os.path.exists(history_path):
+        print("  [SKIP] No search history found")
+        return
+
+    import json
+    with open(history_path) as f:
+        history = json.load(f)
+
+    gens = [h["gen"] + 1 for h in history]
+    bests = [h["best_fitness"] for h in history]
+    means = [h["mean_fitness"] for h in history]
+    worsts = [h["worst_fitness"] for h in history]
+
+    fig, ax = plt.subplots(figsize=(9, 5))
+    ax.plot(gens, bests, "g-o", label="Best", markersize=5, linewidth=2)
+    ax.plot(gens, means, "b-s", label="Mean", markersize=4, linewidth=1.5)
+    ax.fill_between(gens, worsts, bests, alpha=0.12, color="blue")
+    ax.set_xlabel("Generation", fontsize=12)
+    ax.set_ylabel("Fitness (reward - 10×collision)", fontsize=12)
+    ax.set_title("Evolutionary Search Convergence", fontsize=14)
+    ax.legend(fontsize=11)
+    ax.grid(True, alpha=0.3)
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.tight_layout()
+    savefig(fig, "fig_search_convergence.png")
+
+
+# ============================================================
+# Figure 8: Searched NCP topology
+# ============================================================
+def plot_searched_topology():
+    print("Plotting searched NCP topology...")
+    import json
+    genome_path = os.path.join(RESULTS_DIR, "search", "best_genome.json")
+    if not os.path.exists(genome_path):
+        print("  [SKIP] No best genome found")
+        return
+
+    from models.wiring import NCP
+    from utils.visualize import plot_ncp_topology as _plot_topo
+
+    with open(genome_path) as f:
+        genome = json.load(f)
+
+    wiring = NCP(
+        inter_neurons=genome["inter_neurons"],
+        command_neurons=genome["command_neurons"],
+        motor_neurons=5,
+        sensory_fanout=genome["sensory_fanout"],
+        inter_fanout=genome["inter_fanout"],
+        recurrent_command_synapses=genome["recurrent_command_synapses"],
+        motor_fanin=genome["motor_fanin"],
+    )
+    wiring.build((None, 35))
+
+    title = (f"Searched NCP Topology\n"
+             f"(inter={genome['inter_neurons']}, cmd={genome['command_neurons']}, "
+             f"sf={genome['sensory_fanout']}, if={genome['inter_fanout']}, "
+             f"rcs={genome['recurrent_command_synapses']}, mf={genome['motor_fanin']})")
+
+    for d in [FIG_DIR, IMG_DIR]:
+        _plot_topo(wiring, os.path.join(d, "fig_searched_topology.png"), title=title)
+    print("  Saved fig_searched_topology.png")
+
+
+# ============================================================
+# Figure 9: NCP-Hand vs NCP-Searched comparison
+# ============================================================
+def plot_hand_vs_searched():
+    print("Plotting hand vs searched comparison...")
+    envs = ["highway-v0", "merge-v0", "intersection-v0", "roundabout-v0"]
+    seeds = [42, 0, 123]
+
+    hand_rewards, searched_rewards = {}, {}
+    hand_cols, searched_cols = {}, {}
+
+    for env in envs:
+        hr, sr, hc, sc = [], [], [], []
+        for seed in seeds:
+            for prefix, rlist, clist in [("ncp", hr, hc), ("ncp_searched", sr, sc)]:
+                path = os.path.join(RESULTS_DIR, f"{prefix}_{env}_s{seed}", "log.csv")
+                if os.path.exists(path):
+                    df = pd.read_csv(path)
+                    last = df.iloc[-1]
+                    rlist.append(last["mean_reward"])
+                    clist.append(last.get("collision_rate", 1.0))
+        hand_rewards[env] = hr
+        searched_rewards[env] = sr
+        hand_cols[env] = hc
+        searched_cols[env] = sc
+
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+
+    # Reward comparison
+    ax = axes[0]
+    x = np.arange(len(envs))
+    w = 0.35
+    h_means = [np.mean(hand_rewards[e]) for e in envs]
+    h_stds = [np.std(hand_rewards[e]) for e in envs]
+    s_means = [np.mean(searched_rewards[e]) for e in envs]
+    s_stds = [np.std(searched_rewards[e]) for e in envs]
+
+    ax.bar(x - w/2, h_means, w, yerr=h_stds, capsize=4, label="NCP-Hand (25 neurons)",
+           color="#d62728", edgecolor="black", linewidth=0.5)
+    ax.bar(x + w/2, s_means, w, yerr=s_stds, capsize=4, label="NCP-Searched (15 neurons)",
+           color="#ff9896", edgecolor="black", linewidth=0.5)
+    ax.set_xticks(x)
+    ax.set_xticklabels([ENV_SHORT[e] for e in envs])
+    ax.set_ylabel("Mean Reward")
+    ax.set_title("Reward: Hand-designed vs Searched")
+    ax.legend(fontsize=9)
+    ax.grid(True, alpha=0.3, axis="y")
+
+    # Collision rate comparison
+    ax = axes[1]
+    h_col_means = [np.mean(hand_cols[e]) * 100 for e in envs]
+    h_col_stds = [np.std(hand_cols[e]) * 100 for e in envs]
+    s_col_means = [np.mean(searched_cols[e]) * 100 for e in envs]
+    s_col_stds = [np.std(searched_cols[e]) * 100 for e in envs]
+
+    ax.bar(x - w/2, h_col_means, w, yerr=h_col_stds, capsize=4, label="NCP-Hand",
+           color="#d62728", edgecolor="black", linewidth=0.5)
+    ax.bar(x + w/2, s_col_means, w, yerr=s_col_stds, capsize=4, label="NCP-Searched",
+           color="#ff9896", edgecolor="black", linewidth=0.5)
+    ax.set_xticks(x)
+    ax.set_xticklabels([ENV_SHORT[e] for e in envs])
+    ax.set_ylabel("Collision Rate (%)")
+    ax.set_title("Collision Rate: Hand-designed vs Searched")
+    ax.legend(fontsize=9)
+    ax.grid(True, alpha=0.3, axis="y")
+
+    plt.tight_layout()
+    savefig(fig, "fig_hand_vs_searched.png")
+
+
+# ============================================================
 # Main
 # ============================================================
 if __name__ == "__main__":
@@ -275,5 +416,8 @@ if __name__ == "__main__":
     plot_pareto(data)
     plot_ncp_topology()
     plot_param_table(data)
+    plot_search_convergence()
+    plot_searched_topology()
+    plot_hand_vs_searched()
 
     print(f"\nAll figures saved to {FIG_DIR}/ and {IMG_DIR}/")

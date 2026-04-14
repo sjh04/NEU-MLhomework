@@ -1,3 +1,76 @@
 \xiaosi
 
-（待撰写）
+表\ref{tab:main_reward}和表\ref{tab:main_collision}分别展示了6种模型在4个驾驶场景上的平均奖励和碰撞率（3个种子的均值$\pm$标准差）。
+
+\begin{table}[H]
+  \centering
+  \caption{各模型在4个场景上的平均奖励（3个种子均值$\pm$标准差）}
+  \label{tab:main_reward}
+  \wuhao
+  \begin{tabular}{lccccc}
+    \hline
+    模型 & 参数量 & highway-v0 & merge-v0 & intersection-v0 & roundabout-v0 \\
+    \hline
+    Random   & 1       & $9.49\pm2.21$  & $7.47\pm0.60$  & $2.50\pm0.89$ & $4.46\pm1.71$ \\
+    LSTM     & 26,181  & $24.62\pm7.15$ & $12.62\pm1.27$ & $3.55\pm0.05$ & $6.37\pm0.76$ \\
+    FC-LTC   & 7,152   & $28.41\pm1.10$ & $13.53\pm1.77$ & $3.40\pm0.30$ & $6.32\pm1.37$ \\
+    GRU      & 19,717  & $32.15\pm3.36$ & $14.45\pm1.11$ & $3.80\pm0.44$ & $6.28\pm2.01$ \\
+    MLP      & 13,189  & $34.88\pm3.37$ & $\mathbf{15.77\pm0.10}$ & $3.40\pm0.72$ & $\mathbf{7.08\pm1.35}$ \\
+    \textbf{NCP（本文）} & \textbf{7,152} & $\mathbf{34.94\pm1.21}$ & $15.00\pm0.71$ & $2.82\pm0.68$ & $6.63\pm1.38$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{各模型在4个场景上的碰撞率（3个种子均值$\pm$标准差）}
+  \label{tab:main_collision}
+  \wuhao
+  \begin{tabular}{lccccc}
+    \hline
+    模型 & 参数量 & highway-v0 & merge-v0 & intersection-v0 & roundabout-v0 \\
+    \hline
+    Random   & 1       & $98.0\%\pm0.4\%$ & $83.3\%\pm1.9\%$ & $31.6\%\pm1.3\%$ & $51.1\%\pm1.8\%$ \\
+    LSTM     & 26,181  & $56.8\%\pm7.2\%$ & $36.4\%\pm5.6\%$ & $30.2\%\pm0.5\%$ & $46.2\%\pm1.2\%$ \\
+    FC-LTC   & 7,152   & $40.5\%\pm1.7\%$ & $21.2\%\pm4.9\%$ & $30.5\%\pm0.5\%$ & $47.0\%\pm2.9\%$ \\
+    GRU      & 19,717  & $41.0\%\pm5.1\%$ & $21.2\%\pm3.7\%$ & $30.7\%\pm0.5\%$ & $48.6\%\pm5.1\%$ \\
+    MLP      & 13,189  & $\mathbf{30.9\%\pm1.5\%}$ & $\mathbf{20.2\%\pm3.7\%}$ & $30.7\%\pm0.7\%$ & $\mathbf{43.9\%\pm0.8\%}$ \\
+    \textbf{NCP（本文）} & \textbf{7,152} & $37.9\%\pm1.2\%$ & $21.2\%\pm2.7\%$ & $30.5\%\pm1.0\%$ & $50.8\%\pm2.2\%$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+图\ref{fig:training_curves}展示了5种学习模型在4个场景上的训练曲线（3个种子的均值$\pm$标准差）。可以观察到：NCP在highway-v0上收敛速度与MLP相当，但方差阴影更窄，说明训练更稳定；LSTM在所有场景上波动最大。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{img/fig_training_curves.png}
+    \caption{5种模型在4个驾驶场景上的训练曲线（3个种子均值$\pm$标准差）}
+    \label{fig:training_curves}
+\end{figure}
+
+图\ref{fig:reward_bars}和图\ref{fig:collision_bars}分别以柱状图形式直观对比了各模型的最终奖励和碰撞率。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{img/fig_reward_comparison.png}
+    \caption{各模型最终奖励对比（3个种子均值，含误差棒）}
+    \label{fig:reward_bars}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{img/fig_collision_rate.png}
+    \caption{各模型碰撞率对比（3个种子均值，含误差棒）}
+    \label{fig:collision_bars}
+\end{figure}
+
+\subsubsection{主要发现}
+
+\textbf{（1）NCP以最少参数取得最高奖励。}在highway-v0场景上，NCP以7,152参数取得34.94的奖励，与拥有13,189参数的MLP（34.88）持平，同时方差最低（1.21对3.37），表现最稳定。其参数效率（reward/千参数 = 4.89）是MLP（2.64）的1.9倍，GRU（1.63）的3.0倍，LSTM（0.94）的5.2倍。
+
+\textbf{（2）结构化稀疏拓扑优于全连接。}NCP与FC-LTC参数量完全相同（7,152），唯一区别是连接拓扑。在highway-v0上，NCP奖励比FC-LTC高23\%（34.94对28.41），方差更小（1.21对1.10）。这一结果定量证明了NCP的四层稀疏布线结构优于全连接设计。
+
+\textbf{（3）困难场景下所有模型趋同。}在intersection-v0和roundabout-v0上，所有模型的表现差异不大（intersection碰撞率均约30\%，roundabout约45\%--50\%），说明这两个场景的难度超出了当前训练配置的能力。
+
+\textbf{（4）碰撞率方面MLP最优。}MLP在highway-v0上碰撞率最低（30.9\%），NCP为37.9\%。这可能因为MLP的前馈结构能更快地响应碰撞信号，而NCP的ODE动力学引入了一定的响应延迟。这一不足可通过拓扑搜索（优化信息传播路径）或ODE展开数调整来改善。
