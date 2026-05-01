@@ -30,6 +30,12 @@ code/results/ablation_tmp_*
 code/results/_ncp_bak_*
 code/results/ncp_searched_tmp_*
 
+# Submission packages (generated for email delivery)
+submission/
+
+# Course handout / reference template (large binary, not source)
+大作业模板（本科毕设模板）.docx
+
 # OS
 .DS_Store
 Thumbs.db

@@ -4,7 +4,7 @@
 \usepackage[UTF8]{ctex}
 \usepackage{amsmath}
 \usepackage{lastpage}
-\usepackage[top=2.5cm, bottom=2cm, left=3cm, right=2cm]{geometry} % 页边距设定
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2.5cm]{geometry} % 页边距设定
 \usepackage{float}
 \usepackage{multirow}
 \usepackage{algorithm}
@@ -48,7 +48,7 @@
 \newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}        % 小三, 1.5倍行距
 \newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}          % 四号, 1.5 倍行距
 \newcommand{\banxiaosi}{\fontsize{13pt}{19.5pt}\selectfont}    % 半小四, 1.5倍行距
-\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}         % 小四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{23pt}\selectfont}         % 小四, 行距固定值23磅（按规范）
 \newcommand{\dawuhao}{\fontsize{11pt}{11pt}\selectfont}        % 大五号, 单倍行距
 \newcommand{\wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}     % 五号, 单倍行距
 \newcommand{\xiaowu}{\fontsize{9pt}{9pt}\selectfont} % 小五号, 单倍行距
@@ -58,17 +58,20 @@
 % ==================================== 目录格式设定 ====================================
 \usepackage{titletoc}
 % \contentsmargin{2.5em} % 设置目录和页码之间的距离
-\renewcommand{\contentsname}{\heiti\sanhao 目\quad\ 录}
-\dottedcontents{section}[1.5em]{\xiaosi\hei}{1.5em}{1pc} % 小节目录的格式
-\dottedcontents{subsection}[3.5em]{\xiaosi\song}{2em}{1pc} % 子节目录的格式
-\dottedcontents{subsubsection}[5.5em]{\xiaosi\song}{2.5em}{1pc} % 子节目录的格式
+\renewcommand{\contentsname}{\heiti\xiaoer 目\quad\ 录}
+\dottedcontents{section}[1.5em]{\sihao\hei}{1.5em}{1pc} % 章目录格式：黑体四号
+\dottedcontents{subsection}[3.5em]{\xiaosi\song}{2em}{1pc} % 节目录格式：宋体小四
+\dottedcontents{subsubsection}[5.5em]{\xiaosi\song}{2.5em}{1pc} % 子节目录格式：宋体小四
 % ====================================================================================
 
 
 % ==================================== 定义标题格式 ==================================== 
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{\baselineskip}
-\titleformat{\section}{\centering\hei\xiaosan}{\thesection}{1em}{}
+% 章/节/子节标题段前段后间距（按规范：章 0.8 行 / 0.5 行；节 0.5 行 / 0.5 行）
+\titlespacing*{\section}{0pt}{18.4pt}{11.5pt}
+\titlespacing*{\subsection}{0pt}{11.5pt}{11.5pt}
+\titlespacing*{\subsubsection}{0pt}{11.5pt}{11.5pt}
+\titleformat{\section}{\centering\hei\xiaoer}{\thesection}{1em}{}
 \titleformat{\subsection}{\hei\sihao}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\hei\xiaosi}{\quad\quad\thesubsubsection}{1em}{}
 % ===================================================================================
@@ -77,7 +80,7 @@
 % ==================================== 图序和图题设置 ==================================
 \usepackage{caption}
 \usepackage{chngcntr}
-\DeclareCaptionFont{wuhaosong}{\fontsize{10.5pt}{15.75pt}\selectfont \song} % 设置字体为宋体，五号
+\DeclareCaptionFont{wuhaosong}{\fontsize{10.5pt}{23pt}\selectfont \song} % 图标题：宋体五号，行距23磅
 \captionsetup[figure]{font=wuhaosong, labelfont=wuhaosong, labelsep=quad} % 设置图题字体为宋体，五号，标号和图名之间的距离为一个空格
 \counterwithin{figure}{section} % 将图号计数器设置为随着每个章节编号重新计数
 \DeclareCaptionLabelFormat{myfiglabel}{\thesection.#2} % 定义新的图标签格式
@@ -85,7 +88,7 @@
 
 
 % ==================================== 设置表格标题格式 ================================
-\DeclareCaptionFont{wuhaosongcu}{\fontsize{10.5pt}{15.75pt}\selectfont \song\bfseries} % 设置字体为宋体，五号
+\DeclareCaptionFont{wuhaosongcu}{\fontsize{10.5pt}{23pt}\selectfont \song} % 表格标题：宋体五号，行距23磅，按规范不加粗
 \captionsetup[table]{
     labelsep=quad, % 标签与标题内容之间的距离
     font={ wuhaosongcu }, % 字体样式：小五、加粗、黑体
@@ -94,14 +97,14 @@
     singlelinecheck=false, % 标题超过一行时居左
     justification=centering, % 标题居中
 }
-\renewcommand{\thetable}{\arabic{section}-\arabic{table}}   % 设置表格题目为“章节号-章节内序号”
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}   % 设置表格题目为“章节号.章节内序号”
 % ==================================================================================
 
 
 % ==================================== 公式格式设置 ==================================== 
 % 公式序号设置为(所在章节号-章节内编号)
 \numberwithin{equation}{section}
-\renewcommand{\theequation}{\thesection-\arabic{equation}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
 \usepackage[italic]{mathastext} % 将数学字体设置为默认字体
 
 % ==================================================================================
